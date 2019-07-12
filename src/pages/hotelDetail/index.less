@@ -1,0 +1,142 @@
+.hotel-detail{
+}
+
+.tab-box{
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  color: #181818;
+  background: #fff;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  p{
+    &.active{
+      color: #ff8900;
+      b{
+        display: block;
+      }
+    }
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    b{
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -30px;
+      width: 60px;
+      height: 6px;
+      background-color: #ff8900;
+      border-radius: 3px;
+    }
+  }
+}
+
+.content{
+  padding-top: 100px;
+}
+
+.list-box{
+  margin-top: 20px;
+  padding: 40px;
+  background: #fff;
+  .title{
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    color: #393939;
+  }
+  .item{
+    margin-top: 40px;
+    .item-title{
+      text-align: left;
+      font-size: 30px;
+      line-height: 40px;
+      color: #3d3d3d;
+      .labe_icon{
+        width: 30px;
+      }
+      .iconfont{
+        &:before{
+          font-size: 30px;
+        }
+        margin-right: 20px;
+        color: #ff8900;
+      }
+    }
+    .type-list{
+      display: flex;
+      justify-content: flex-start;
+      text-align: left;
+      flex-wrap: wrap;
+      padding-left: 50px;
+      font-size: 24px;
+      line-height: 40px;
+      color: #ababab;
+      .label{
+        width: 30%;
+        margin: 1%;
+      }
+    }
+  }
+  &.guize{
+    .item-title{
+      color: #ff8900;
+    }
+    .type-list{
+      padding-left: 0;
+    }
+  }
+  .room-type{
+    margin-top: 30px;
+    font-size: 28px;
+    line-height: 40px;
+    color: #393939;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    p{
+      width: 50%;
+    }
+    span{
+      margin-right: 10px;
+      color: #FF8900;
+    }
+  }
+  .room-content{
+    font-size: 26px;
+    line-height: 40px;
+    color: #6a6a6a;
+    margin-top: 20px;
+    text-align: left;
+  }
+  .road-item{
+    line-height: 50px;
+    text-align: left;
+    margin-top: 30px;
+    .road-title{
+      font-size: 28px;
+      color: #ff8900;
+    }
+    .road-detail{
+      font-size: 24px;
+      color: #393939;
+    }
+  }
+}
+
+
+.hotel_description{
+  margin-top: 32px;
+  font-size: 24px;
+  text-align: left;
+  line-height: 50px;
+  font{
+    font-size: 30px;
+  }
+}

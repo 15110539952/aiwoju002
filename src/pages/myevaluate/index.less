@@ -1,0 +1,85 @@
+
+.bg20{
+  background: #f8f8f8;
+  height: 20px;
+  width: 100%;
+  //position: fixed;
+  //top:100px;
+  //left: 0;
+  //z-index: 1;
+}
+
+.no-order{
+  margin-top: 260px;
+  text-align: center;
+  img{
+    width: 200px;
+  }
+  p{
+    font-size: 24px;
+    color: #666666;
+  }
+}
+.evaluate-list{
+  padding: 20px 40px;
+}
+.evaluate-item{
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 18px 0px
+  rgba(153, 153, 153, 0.27);
+  border-radius: 20px;
+  position: relative;
+  padding: 30px;
+  text-align: left;
+  margin-bottom: 30px;
+  &:active{
+    background: #f2f3f5;
+  }
+  .content{
+    line-height: 30px;
+    .room-name{
+      font-size: 24px;
+      color: #333;
+    }
+    .room-date{
+      font-size: 20px;
+      color: #999;
+      line-height: 30px;
+      span:first-child{
+        margin-right: 40px;
+      }
+    }
+    // 评分列表
+    .score-box{
+      text-align: left;
+      vertical-align: middle;
+      line-height: 40px;
+      margin: 10px 0;
+      i{
+        font-size: 22px;
+        margin-right: 5px;
+      }
+      color: #ff8900;
+      .score{
+        line-height: 30px;
+        font-family: Oswald-Regular;
+        font-size: 24px;
+        margin-right: 20px;
+      }
+    }
+    .img-num{
+      font-size: 24px;
+      color: #f86f00;
+    }
+  }
+  .right-bg{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    top:0;right:0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #FF8900;
+  }
+}

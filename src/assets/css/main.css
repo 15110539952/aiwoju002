@@ -1,0 +1,127 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+body {
+  font-size:12px;
+  background: #f8f8f8;
+  font-family:PingFang-SC-Bold;
+  height: 100%;
+  /* background-image:linear-gradient(45deg,rgba(100,100,100,.1) 25%,transparent 0,transparent 75%,rgba(100,100,100,.1) 0),linear-gradient(45deg,rgba(100,100,100,.1) 25%,transparent 0,transparent 75%,rgba(100,100,100,.1) 0);
+  background-position:0 0,15px 15px;
+  background-size:30px 30px; */
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-size:1em;
+  font-weight:normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+i,em{font-style:normal}
+
+img {
+  border: none;
+}
+
+input {
+  outline:none;
+  border:none;
+}
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+.text-ellipsis{ /* 单行省略 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+.font20{
+  font-size: 20px;
+}
+.font22{
+  font-size: 22px;
+}
+.font24{
+  font-size: 24px;
+}
+.font36{
+  font-size: 36px;
+}
+.font55{
+  font-size: 55px;
+}
+
+.active-bg:active{
+  background: #f2f3f5;
+}
+
+
+.iconfont:before{
+  font-size: 20px;
+}
+
+
+
+
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url('../fonts/Oswald-Regular.ttf');
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url('../fonts/hp/iconfont.eot?t=1557758377413'); /* IE9 */
+  src: url('../fonts/hp/iconfont.eot?t=1557758377413#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAS4AAsAAAAACXwAAARrAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDSAqFcIRdATYCJAMYCw4ABCAFhG0HVhsRCFGULkqX7AtsG/a0gdvdbuLYTnLXwfrcw8AobwrgcwEXsAAAFADi4b/9aPfNzJ8VkSSa9mw3wySRSZpMKskTLUCpJCJeyX/w5g5H9sGiEnyHvoaJnGvREy7AwvOA29JpAHjSmrQ8Mky4//nlN8snKylsvA1dhlynz3sLi6gETlBQwCslzanSyy+o02Zv1K2a+zrj2V3+53Bp0zbY/JblOOeiXhTHAQW2p9eNSQd6B3J8QHoGsbP74C1Blwl0m0eCB6l3j6mSQpsViDv1RqVKMbVSQg6dspqzsYh3Gp3pTZoh3ro/H3+hzdAhaTLtqsu3z3Xq6Af6i86vWxG6lT+87s8IbhsZG4BCPM81P5T1wxuwbuUv5JxJ6dUpKT/QH7o/zPdPov2J8TV76NXNNKv6x8sSURFxL7DnIw0/sskOJV1QCkgmoVQg+QcmmV99dRKoPU7ox3dijoZbYC6yXhiTU4spSh+3pqCwZMy7PNI/+mqNTX8LIbmxsR7FTCBPv9jhM9+LxCWC6B41ZnkAvLNPLPHJ524Gy9sQ29+9Jq6Tej2b0kYZJaLoIY+Yo4/WyPSnEL3Gb4HOfI7vMamqyRcUBQDjMgCjkln1WI9ZLcKD0dExE26UKP3ayX3rE37I/PebB197bYFMBH2p+3V2ZHFstsDl8kIOe696bHpqjSCQqY/BxMlnW5To3piZNavd7MlDBkWQQ81QsqaKrGW6N6TNCX3JdXHtEYUQKAXTKInQEbLo8iIpzbraKilAvdHspJwwpynK9o06RFZTEWnYhUGzwW/t85Suqe6Z4JdaDGioOrRhF7jWsEdmGQNrA4albbP/pX8E5b8MCg32P2RB5QiDsz7Ew+7todSaUG/VbEP8+bNRadt7w+KnITpHmPFdF2AJaswP/m+yN722lb87ewwC5+iUxiBNjWo4fuGYAtlpntKjLJAeSVk8OFO8/v05qzVbnwCt/0peJv753HGboxvxv8jpNB8Yfpa49CvrRUzmmUy7X6WH+jI3PAunhX9Xq+qc0WoOH5PP6VvjeaDHUmhlDOTXkL+kiVZCfyzR7qMxevMh/Y5Pzfdoqbn3v1Qt4FvbrruuVsRAffbXIKFwPhtOzbai8jRNLXJrs0KgOo0kSejWu/hY7MO2vqRjtYOEzhiHg6TDHGSdFpAFuwGNHltQddqGbuvE7T1GBLKidGFNQkEY1EPS7ytkgxZkwa7QGPdBNRgodLsZ3QN7LEU9cdqBSlBDxRvUWxTZhk4qXu49mnmgOMpzKc/IieuDAF//ZOwSI+Q+ltxamO3bYkMNUwip1HUYBARtTB5asl4nEu/4+dXkPdJ6JYWpin0MKQJpQPUGOCwkYtu9RSX1/feQMRdQuKSlwvoMsYQ7OODQ2BrIS3FUq+VchocWjG0RYdPTTIyEgAAjCvQwAV7+OA+yiHV2i2BsB0M6mXXF6+NLw6vcB920Q2qkyFGiiRod6uN6RaYga6ii8jEMX7uNiVTf61ztRiY/NcqqKp1KAQA=') format('woff2'),
+  url('../fonts/hp/iconfont.woff?t=1557758377413') format('woff'),
+  url('../fonts/hp/iconfont.ttf?t=1557758377413') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('../fonts/hp/iconfont.svg?t=1557758377413#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiaoxi:before {
+  content: "\e609";
+}
+
+.icon-xin:before {
+  content: "\e80d";
+}
+
+.icon-icon-test:before {
+  content: "\e6ec";
+}
+
+.icon-zhidingxian:before {
+  content: "\e618";
+}
+
+.icon-add:before {
+  content: "\e603";
+  color: #0096d5;
+}

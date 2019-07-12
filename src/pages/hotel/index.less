@@ -1,0 +1,492 @@
+
+#header{
+  background: #fff;
+}
+.banner{
+  width: 100%;
+  height: 446px;
+  .van-swipe{
+    height: 100%;
+  }
+  .banner-img{
+    width: 100%;
+    height: 100%;
+  }
+  /deep/ .van-swipe__indicators{
+    left: 60px;
+    .van-swipe__indicator{
+      width: 18px;
+      height: 18px;
+    }
+  }
+  position: relative;
+  .scope-block{
+    position: absolute;
+    width: 168px;
+    height: 160px;
+    border-radius: 10px;
+    background:rgba(2,2,2,.7);
+    z-index: 1;
+    right: 40px;
+    bottom: 30px;
+    padding-top: 20px;
+    text-align: center;
+    color: #ffffff;
+    .one{
+      font-size: 20px;
+      height: 20px;
+      margin-bottom: 17px;
+      color: #fffefe;
+    }
+    .two{
+      span{
+        font-family: Oswald-Regular;
+        font-size: 50px;
+        line-height: 40px;
+        letter-spacing: 0px;
+      }
+      font-family: PingFang-SC-Regular;
+      font-size: 24px;
+      line-height: 40px;
+      height: 40px;
+      letter-spacing: 0px;
+      color: #fffefe;
+    }
+    .three{
+      margin-top: 20px;
+      color: #ff8200;
+      .white{
+        color: #fff;
+        opacity: .8;
+      }
+      img,i{
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.address-block{
+  height: 120px;
+  width: 100%;
+  background: #fff;
+  padding: 40px 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  .left{
+    width: 570px;
+    .name-block{
+      line-height: 30px;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .name{
+      max-width: 445px;
+      font-family: PingFang-SC-Heavy;
+      font-size: 28px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0px;
+      color: #333333;
+    }
+    .label{
+      font-family: PingFang-SC-Regular;
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0px;
+      color: #333333;
+    }
+    .apart{
+      text-align: left;
+      font-family: PingFang-SC-Regular;
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 30px;
+      letter-spacing: 0px;
+      color: #999999;
+    }
+  }
+  .right{
+    width: 70px;
+    height: 60px;
+    border-left: 2px solid #999;
+    text-align: right;
+    img{
+      width: 39px;
+      height: 59px;
+    }
+  }
+}
+//日期选择
+.date-block{
+  margin-top: 20px;
+  width: 100%;
+  height: 200px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 40px;
+  .start,.end{
+    .text1{
+      font-size: 22px;
+      line-height: 40px;
+      letter-spacing: 0px;
+      color: #8a8a8a;
+    }
+    .date{
+      color: #ff8900;
+      margin: 20px auto;
+      .date-num{
+        font-size: 50px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 40px;
+        height: 40px;
+        letter-spacing: 0px;
+      }
+      .text-riyue{
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0px;
+      }
+    }
+    p:last-child{
+      font-size: 22px;
+      color: #8a8a8a;
+    }
+  }
+  .num-date{
+    width: 180px;
+    margin-top: 65px;
+    p{
+      display: inline-block;
+      position: relative;
+      height: 30px;
+      padding: 0 10px;
+      background-color: #086fa1;
+      border-radius: 15px;
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: 0px;
+      color: #fefefe;
+      margin: 0 5px;
+    }
+    b{
+      position: absolute;
+      top: 50%;
+      margin-top: -2px;
+      width: 35px;
+      height: 4px;
+      background-color: #999999;
+      &.left{
+        left: -40px;
+      }
+      &.right{
+        right: -40px;
+      }
+    }
+  }
+}
+// 房间列表
+.room-list{
+  margin-top: 20px;
+  background: #fff;
+  padding: 0 40px;
+}
+.room-item{
+  padding-top: 40px;
+  .room-info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    .img{
+      border-radius: 10px;
+      background: #FF8900;
+      width: 180px;
+      height: 180px;
+    }
+    .info{
+      width: 475px;
+      text-align: left;
+      padding: 10px 0;
+      .one{
+        margin-bottom: 55px;
+        height: 32px;
+        .name{
+          font-size: 32px;
+          letter-spacing: 0px;
+          color: #333333;
+        }
+        .label{
+          font-size: 24px;
+          letter-spacing: 0px;
+          color: #ff3500;
+        }
+      }
+      .two{
+        font-size: 24px;
+        height: 24px;
+        margin-bottom: 20px;
+        color: #333333;
+      }
+      .three{
+        font-size: 24px;
+        letter-spacing: 0px;
+        color: #999999;
+        span:last-child{
+          i{
+            display: none;
+          }
+        }
+        i{
+          position: absolute;
+          top:2px;
+          right: 0;
+          height: 24px;
+          width: 2px;
+          background: #999;
+        }
+        span{
+          position: relative;
+          vertical-align: top;
+          padding: 0 20px 5px;
+        }
+      }
+    }
+  }
+  .price-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    .type{
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      text-align: left;
+      .top{
+        font-size: 32px;
+        color: #333333;
+      }
+      .bottom{
+        font-size: 24px;
+        color: #999999;
+      }
+    }
+    .price{
+      height: 70px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      .top{
+        font-size: 24px;
+        color: #ff3500;
+        height: 50px;
+        line-height: 50px;
+        span{
+          font-family: Oswald-Regular;
+          font-size: 50px;
+          color: #ff3500;
+        }
+      }
+      .bottom{
+        font-size: 20px;
+        color: #999999;
+      }
+    }
+    .fix{
+      //width: 160px;
+      height: 70px;
+      //padding: 20px;
+      /deep/ .van-button--primary {
+        color: #fff;
+        background-color: #ff8900;
+        border: none;
+        height: 70px;
+        line-height: 70px;
+        font-size:28px;
+        border-radius: 10px;
+        padding: 0 25px;
+      }
+    }
+  }
+}
+// 订房必读
+.title-one{
+  font-size: 36px;
+  color: #333333;
+  margin-bottom: 40px;
+  text-align: left;
+  position: relative;
+  .title-right{
+    position: absolute;
+    top:6px;
+    right:0;
+    font-size: 24px;
+    color: #086fa1;
+    &:active{
+      background: #f2f3f5;
+    }
+  }
+}
+.rule-box{
+  margin-top: 20px;
+  background: #fff;
+  width: 100%;
+  padding: 40px 40px 20px;
+}
+.rule-item{
+  text-align: left;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 30px;
+  .rule-title{
+   color: #ff8900;
+  }
+  .rule-content{
+    color: #333;
+  }
+  .left{
+    margin-right: 50px;
+    span{
+      margin-left: 15px;
+    }
+  }
+}
+//配套设施
+.facilities{
+  margin-top: 20px;
+  padding: 40px 40px 20px;
+  background: #fff;
+  .rule-item{margin-bottom: 0;}
+  .rule-content{
+    display: flex;
+    justify-content: flex-start;
+    p{
+      margin-right: 50px;
+      vertical-align: center;
+    }
+    img{
+      margin-right: 10px;
+      vertical-align: center;
+    }
+  }
+}
+
+// 房间评价
+.facilities-score{
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 40px;
+  .left{
+    height: 55px;
+    color: #ff8900;
+    font-size: 24px;
+    vertical-align: top;
+    span{
+      font-family: Oswald-Regular;
+      font-size: 45px;
+    }
+    border-right: 1px solid #999;
+    padding-right: 20px;
+  }
+  .right{
+    padding-left: 20px;
+    text-align: left;
+    p:first-child{
+      font-size: 20px;
+      color: #393939;
+    }
+    p:last-child{
+      i{
+        font-size: 22px;
+        margin-right: 5px;
+      }
+      color: #ff8900;
+    }
+  }
+}
+
+// 评价列表
+.score-box{
+  margin: 10px 0 15px;
+  text-align: left;
+  i{
+    font-size: 22px;
+    margin-right: 5px;
+  }
+  color: #ff8900;
+}
+.evaluate-item{
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 40px;
+  .head{
+    width: 94px;
+    height: 94px;
+    border-bottom:1px solid #41c880;
+    background-size: 100% 100%;
+    margin-right: 10px;
+    border-radius: 50%;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+  .content{
+    width: 566px;
+    text-align: left;
+    .one{
+      display: flex;
+      justify-content: space-between;
+      p:first-child{
+        font-size: 28px;
+        line-height: 35px;
+        color: #ff8900;
+      }
+      p:last-child{
+        font-size: 24px;
+        line-height: 35px;
+        color: #949494;
+      }
+    }
+    .time-block{
+      display: flex;
+      justify-content: space-between;
+      p{
+        font-size: 20px;
+        line-height: 35px;
+        color: #b6b6b6;
+        span{
+          margin-right: 15px;
+        }
+      }
+    }
+    .detail{
+      margin: 30px 0;
+      font-size: 28px;
+      line-height: 35px;
+      color: #404040;
+    }
+    .img-box{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      .evaluate-img{
+        width: 172px;
+        height: 132px;
+        background-size: cover;
+        background-position: center;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        //background-color: #ff8200;
+      }
+    }
+  }
+}
+

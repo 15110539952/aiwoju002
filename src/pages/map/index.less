@@ -1,0 +1,69 @@
+.map{
+
+}
+.map-type{
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 9;
+  background: #fff;
+  .map-item{
+    width: 33.333%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &:active{
+      background: #f2f3f5;
+    }
+    img{
+      margin-bottom: 10px;
+      margin: 0 auto;
+    }
+    p{
+      font-size: 24px;
+      color: #181818;
+      &.active{
+        color: #ff3500;
+      }
+    }
+    &.one img{
+      width: 60px;
+      height: 39px;
+    }
+    &.two img{
+      width: 60px;
+      height: 35px;
+    }
+    &.three img{
+      width: 36px;
+      height: 39px;
+    }
+  }
+}
+.map-btn{
+  position: fixed;
+  bottom: 0;left: 0;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: #ff8900;
+  color: #fff;
+  font-size: 36px;
+  z-index: 9;
+}
+
+.main{
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top:0;left: 0;
+  padding: 210px 0 100px;
+  #container{
+    width: 100%;
+    height: 100%;
+    //height: calc(~"100% - 310px");
+    //background: #f5f5f5;
+  }
+}

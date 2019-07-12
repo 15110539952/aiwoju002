@@ -1,0 +1,155 @@
+.banner{
+  width: 100%;
+  position: relative;
+  padding-top: 50px;
+  z-index: 1;
+  .head-bg{
+    margin: 0 auto 24px;
+    width: 215px;
+    height: 215px;
+    border: solid 1px #333;
+    border-radius: 50%;
+    .head{
+      width: 180px;
+      height: 180px;
+      margin: 17.5px auto;
+      /deep/ img{
+        border-radius: 50%;
+      }
+    }
+    position: relative;
+    .head-bm{
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      margin-left: -70px;
+      width: 140px;
+      height: 36px;
+      line-height: 36px;
+      font-size: 20px;
+      color: #fff;
+      background-color: #086fa1;
+      border-radius: 18px;
+      text-align: center;
+    }
+  }
+  .username{
+    font-size: 36px;
+    line-height: 40px;
+    color: #333333;
+  }
+
+}
+.me-type{
+  width: 670px;
+  margin: 30px auto 0;
+  padding: 20px 80px 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 18px 0px
+  rgba(153, 153, 153, 0.27);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    bottom:30px;
+    left: 80px;
+    width: 510px;
+    height: 1px;
+    background: #0778AF;
+  }
+  .item{
+    //border-bottom: 1px solid #0778AF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    line-height: 40px;
+    padding-bottom: 10px;
+    span{
+      font-family: Oswald-Regular;
+      font-size: 36px;
+      color: #999999;
+    }
+    p{
+      color: #0778af;
+      font-size: 24px;
+    }
+    &.one{
+      span{
+        color: #0778af;
+      }
+    }
+    &.two{
+      margin: 0 12.5%;
+      span{
+        color: #ff3500;
+      }
+    }
+    &.three{
+      span{
+        color: #ffb800;;
+      }
+    }
+
+  }
+}
+.distribution{
+  width: 670px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 18px 0px
+  rgba(153, 153, 153, 0.35);
+  border-radius: 20px;
+  margin: 60px auto 0;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  .item{
+    padding: 30px 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    color: #0778af;
+    &:active{
+      background: #f2f3f5;
+    }
+  }
+  img{
+    width: 82px;
+    height: 82px;
+  }
+}
+.draw-commission {
+  width: 512px;
+  margin: 0 auto;
+  height: 70px;
+  line-height: 70px;
+  background-color: #0778af;
+  border-radius: 0px 0px 35px 35px;
+  font-size: 30px;
+  color: #fff;
+  overflow: hidden;
+  &:active{
+    opacity: .8;
+  }
+}
+.get-commission {
+  width: 512px;
+  height: 92px;
+  background-color: #ff8900;
+  border-radius: 0px 0px 35px 35px;
+  margin: 0 auto;
+  line-height: 92px;
+  font-size: 30px;
+  color: #fff;
+  overflow: hidden;
+  &:active{
+    //opacity: .8;
+  }
+}
