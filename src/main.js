@@ -94,10 +94,16 @@ Vue.filter('week', function (date) {
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-window.$globalHub = new Vue({
-  el: '#app',
+new Vue({
   router,
   store,
-  components: { App },
-  template: '<App/>'
-})
+  render: h => h(App)
+}).$mount('#app');
+
+// window.$globalHub = new Vue({
+//   el: '#app',
+//   router,
+//   store,
+//   components: { App },
+//   template: '<App/>'
+// })

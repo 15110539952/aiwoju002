@@ -236,7 +236,7 @@
     }
   }
 </script>
-<style lang="less">
+<style lang="less" scoped>
   /*@import 'src/style/common'*/
   .select-date{
     position: fixed !important;

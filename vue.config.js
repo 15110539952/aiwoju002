@@ -23,7 +23,11 @@ module.exports = {
           '^/lawqa': 'api/'
         }
       },
-    }
+    },
+    overlay: {
+      warnings: false,
+      errors: false
+    },
   },
-  runtimeCompiler: true,
+  runtimeCompiler: false,
 };
